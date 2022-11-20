@@ -1,0 +1,62 @@
+.wrapper{
+    padding: 20px;
+}
+.title {
+    text-align: center;
+}
+.red {
+    background-color: red;
+    
+}
+.modaler {
+    font-size: 20px;
+    background-color: bisque;
+    text-align: center;
+    padding: 10px 20px;
+    width: 300px;
+    opacity:0;
+    
+}
+
+#search {
+    margin:20px 5px;
+}
+.show {
+    animation: move 1s linear;
+    opacity:1;
+    
+
+}
+@keyframes move {
+   0%{
+    transform: translateX(-200%);
+   }
+    25% {
+        transform: translateX(-150%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
+.positioned {
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.positioned img {
+    width: 20%;
+}
+.positioned div:nth-child(2) {
+    cursor: pointer;
+    width:40%;
+    padding: 0 20px;
+    font-size: 1.2em;
+    
+}
